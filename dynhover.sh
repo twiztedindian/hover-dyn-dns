@@ -39,7 +39,7 @@ curlDO() {
                 -d "content=${ip}"                      \
                 -m 60                                   \
                 -s                                      \
-                -b <(curl "https://www.hover.com/signin"\
+                -b <(curl "https://www.hover.com/api/login"\
                         -X POST                         \
                         -G                              \
                         -d "username=${USERNAME}"       \
